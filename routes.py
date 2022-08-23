@@ -10,7 +10,7 @@ import os
 decoded_info = ""
 
 
-@app.route("/home")
+@app.route("/")
 def index():
     return render_template("home.html", title="Home Page")
 

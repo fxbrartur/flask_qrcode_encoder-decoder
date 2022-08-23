@@ -20,4 +20,3 @@ app.config['DROPZONE_REDIRECT_VIEW'] = 'decoded'
 dropzone = Dropzone(app)
 
 
-from application import routes
