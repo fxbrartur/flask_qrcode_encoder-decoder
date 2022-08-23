@@ -1,0 +1,10 @@
+    {% extends "template.html" %}
+    {% block content %}
+    <div style="margin:3% auto 3% auto; border: 3px solid black;">
+        <img style="margin: auto;" src="{{ url_for('static', filename=image) }}" alt="qrcode Image">
+    </div>
+    <a href="{{ url_for('static', filename=image) }}" class="btn btn-primary" download="qrcode_image.png">Download Image</a>
+
+    <footer>Developed by <a href="https://github.com/fxbrartur">fxbrartur</a>
+</footer>
+    {% endblock %}

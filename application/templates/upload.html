@@ -1,0 +1,15 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="justify-content-center">
+    <h4>Drop the QR Code here to get it decoded:</h4>
+</div>
+
+{{ dropzone.create(action='upload') }}
+{{ dropzone.load_js() }}
+{{ dropzone.config() }}
+
+
+<footer>Developed by <a href="https://github.com/fxbrartur">fxbrartur</a>
+</footer>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+{% block content %}
+
+<h3 xmlns="http://www.w3.org/1999/html">QR Code Generator and Decoder for Adjusters</h3>
+<div class="d-flex justify-content-center mt-4">
+        <img style="margin: 0px;" src="{{ url_for('static', filename='helpadjust.png') }}" alt="qrcode Image">
+    </div>
+</div>
+
+<div class="d-flex justify-content-center mt-4">
+    <a class="btn btn-success m-2" href="{{ url_for('index_page') }}">Generate QR Code</a>
+    <a class="btn btn-danger m-2" href="{{ url_for('upload') }}">Read QR Code</a>
+</div>
+
+<footer>Developed by <a href="https://github.com/fxbrartur">fxbrartur</a>
+</footer>
+
+{% endblock %}
