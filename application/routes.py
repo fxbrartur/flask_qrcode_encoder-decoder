@@ -1,4 +1,4 @@
-from application import app
+from application import app, dropzone
 from application.forms import QRCodeData
 from flask import render_template, request, redirect, url_for
 import qrcode
